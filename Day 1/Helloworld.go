@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"time"
 )
 
 //My first helloword struct
@@ -36,7 +37,14 @@ func simpleinterest(principal int, rate int, duration int) (result int) {
 	return
 }
 
+//Playing with time
+func getDateTime() {
+	var t = time.Now()
+	fmt.Println(t.Day())
+}
+
 func main() {
+	getDateTime()
 	fmt.Println(simpleinterest(100, 20, 5))
 	fmt.Println(StringCompare("Monday", "Matsumu"))
 	fmt.Println(GettingUerInputsFromConsole("Matsumu, Monday", "garba"))
